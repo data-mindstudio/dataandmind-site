@@ -86,8 +86,53 @@
       max-width: 700px;
     }
 
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 3rem;
+    }
+
+    .app-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-header img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
     .muted {
       color: var(--muted);
+    }
+
+    .store-link {
+      margin-top: auto;
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #2563eb;
+      color: #2563eb;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .store-link:hover {
+      background: #2563eb;
+      color: #ffffff;
     }
 
     footer {

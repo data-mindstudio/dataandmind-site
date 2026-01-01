@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data & Mind Studio</title>
-  <meta name="description" content="Data, SQL products, focused apps, and B2B tools by Data & Mind Studio." />
+
+  <meta name="description" content="Data & Mind Studio builds data tools, SQL products, mobile apps, and B2B SaaS focused on clarity, reliability, and real-world use." />
   <meta name="author" content="Data & Mind Studio" />
 
   <style>
@@ -13,52 +14,16 @@
       --text: #111827;
       --muted: #6b7280;
       --accent: #2563eb;
+      --border: #e5e7eb;
     }
 
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--text);
       background: var(--bg);
-      color: var(--text);
       line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
-
-    h1 {
-      font-size: 2.6rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      margin-top: 3rem;
-      font-size: 1.6rem;
-    }
-
-    p {
-      max-width: 700px;
-      color: var(--text);
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .section {
-      margin-top: 2.5rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e5e7eb;
-      font-size: 0.9rem;
-      color: var(--muted);
     }
 
     a {
@@ -69,90 +34,171 @@
     a:hover {
       text-decoration: underline;
     }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav .links a {
+      margin-left: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav .links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    section {
+      margin-top: 4rem;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      max-width: 700px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 5rem;
+      padding: 32px 24px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
 
-  <main class="container">
+<header>
+  <nav>
+    <div class="brand">Data & Mind Studio</div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/b2b">B2B SaaS</a>
+      <a href="/apps">B2C Apps</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-    <h1>Data & Mind Studio</h1>
+<main>
+
+  <!-- HOME / HERO -->
+  <section id="home">
+    <h1>Build better data systems.<br>Ship focused products.</h1>
     <p class="muted">
-      Build better data systems. Ship focused products. Think clearly.
+      Data & Mind Studio builds practical data tools, SQL playbooks,
+      privacy-first mobile apps, and B2B SaaS — designed for clarity,
+      reliability, and real-world use.
     </p>
+  </section>
 
-    <section class="section">
-      <p>
-        I’m a Data Engineer and independent builder creating
-        <strong>practical data tools, production-ready SQL playbooks,
-        and lightweight apps</strong> designed for clarity, reliability,
-        and real-world use.
-      </p>
-    </section>
+  <!-- B2B SAAS -->
+  <section id="b2b">
+    <h2>B2B SaaS</h2>
+    <p>
+      We are building reliability and monitoring tools for modern data stacks —
+      starting with data pipeline monitoring, alerting, and failure analysis.
+    </p>
+    <p class="muted">
+      Status: Research & build-in-public (2026)
+    </p>
+    <a href="/b2b">Explore B2B SaaS →</a>
+  </section>
 
-    <section class="section">
-      <h2>🧠 Data & SQL Products</h2>
-      <p>
-        Practical SQL tricks and job templates built from real production
-        pipelines — focused on performance, reliability, and maintainability.
-      </p>
-      <p class="muted">
-        Available as downloadable PDFs.
-      </p>
-    </section>
+  <!-- B2C APPS -->
+  <section id="apps">
+    <h2>B2C Mobile Apps</h2>
+    <p>
+      Focused, distraction-free productivity apps and experimental AI
+      micro-apps. Built to be simple, fast, and privacy-first.
+    </p>
+    <p class="muted">
+      Available on Google Play.
+    </p>
+    <a href="/apps">View Mobile Apps →</a>
+  </section>
 
-    <section class="section">
-      <h2>📱 Focused Mobile Apps</h2>
-      <p>
-        Simple, distraction-free productivity apps and experimental AI
-        micro-apps. Built to be fast, private, and intentional.
-      </p>
-      <p class="muted">
-        Available on Google Play.
-      </p>
-    </section>
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>
+      Writing on Data Engineering, SQL, systems thinking, and lessons
+      learned from building products independently.
+    </p>
+    <p>
+      We also publish deep-dive content on US Healthcare data and systems,
+      building long-term domain authority.
+    </p>
+    <a href="/blog">Read the Blog →</a>
+  </section>
 
-    <section class="section">
-      <h2>🏗️ B2B Tools (Coming Soon)</h2>
-      <p>
-        Data pipeline monitoring, alerting, and reliability tooling for
-        modern data stacks. Currently in research and build-in-public phase.
-      </p>
-    </section>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Data & Mind Studio is an independent studio focused on building
+      useful, real-world software products — prioritizing simplicity,
+      clarity, and shipping over complexity.
+    </p>
+    <a href="/about">Learn more →</a>
+  </section>
 
-    <section class="section">
-      <h2>✍️ Writing</h2>
-      <p>
-        I write about Data Engineering, SQL, systems thinking, and lessons
-        learned from building products independently.
-      </p>
-      <p>
-        I also publish deep-dive content on US Healthcare data systems,
-        building long-term domain authority.
-      </p>
-    </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      For questions, collaborations, or feedback:
+    </p>
+    <p>
+      📧 <a href="mailto:contact@dataandmind.studio">contact@dataandmind.studio</a>
+    </p>
+  </section>
 
-    <section class="section">
-      <h2>Principles</h2>
-      <p class="muted">
-        Simplicity over complexity · Useful over impressive ·
-        Shipping over theorizing · Privacy by default
-      </p>
-    </section>
+</main>
 
-    <section class="section">
-      <h2>Get in Touch</h2>
-      <p>
-        📧 <a href="mailto:contact@dataandmind.studio">contact@dataandmind.studio</a>
-      </p>
-    </section>
-
-    <footer>
-      © 2026 Data & Mind Studio ·
-      <a href="/legal/privacy-policy">Privacy Policy</a> ·
-      <a href="/legal/terms-and-conditions">Terms & Conditions</a>
-    </footer>
-
-  </main>
+<footer>
+  © 2026 Data & Mind Studio ·
+  <a href="/legal/privacy-policy">Privacy Policy</a> ·
+  <a href="/legal/terms-and-conditions">Terms & Conditions</a>
+</footer>
 
 </body>
 </html>

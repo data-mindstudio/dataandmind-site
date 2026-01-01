@@ -8,13 +8,58 @@
   <meta name="description" content="About Data & Mind Studio — an independent studio building practical data tools, apps, and SaaS." />
 
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      color: #111827;
-      background: #ffffff;
+      color: var(--text);
+      background: var(--bg);
       line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav .links a {
+      margin-left: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav .links a:hover {
+      color: var(--text);
     }
 
     main {
@@ -23,26 +68,36 @@
       padding: 64px 24px;
     }
 
-    h1 { font-size: 2.4rem; }
-    h2 { margin-top: 3rem; }
+    section {
+      margin-top: 4rem;
+    }
 
-    p { max-width: 720px; }
-    .muted { color: #6b7280; }
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      max-width: 700px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
 
     footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid var(--border);
+      margin-top: 5rem;
+      padding: 32px 24px;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: var(--muted);
+      text-align: center;
     }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
   </style>
 </head>
 
